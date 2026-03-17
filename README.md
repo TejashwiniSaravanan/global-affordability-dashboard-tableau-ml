@@ -7,17 +7,21 @@ In an era of record-high inflation and wage stagnation, understanding the "real"
 
 By merging disparate datasets and applying machine learning models (Random Forest, Linear Regression, and K-Means Clustering), this project identifies the true economic burden of rent, groceries, and utilities relative to local earnings.
 
-### 🔗 Interactive Dashboards (Tableau Public)
-The visualization suite follows a "Macro-to-Micro" design philosophy, transitioning from global trends to specific city-level economic drivers:
+## 📊 Interactive Dashboard Suite
 
-* **[Dashboard 1: Global Affordability Tracker 2025](https://public.tableau.com/app/profile/tejashwini.saravanan8751/viz/finalprojectassigmentTableau/GlobalAffordabilityTracker2025)**
-    * **Focus:** Geographical heat map of the custom Affordability Score. Identifies "Economic Red Zones" where costs heavily outweigh local earnings.
-* **[Dashboard 2: Country-Level Affordability Insights](https://public.tableau.com/app/profile/tejashwini.saravanan8751/viz/finalprojectassigmentTableau/Country-LevelAffordabilityInsights)**
-    * **Focus:** Ranks countries by Rent-to-Salary percentages, highlighting how national housing markets impact disposable income.
-* **[Dashboard 3: City-Level Affordability Insights](https://public.tableau.com/app/profile/tejashwini.saravanan8751/viz/finalprojectassigmentTableau/City-LevelAffordabilityInsights)**
-    * **Focus:** A granular "Search & Compare" interface for specific cities, breaking down costs for Groceries, Rent, and Utilities.
-* **[Dashboard 4: Global Cost of Living Key Insights](https://public.tableau.com/app/profile/tejashwini.saravanan8751/viz/finalprojectassigmentTableau/GlobalCostofLivingKeyInsights)**
-    * **Focus:** Visualizes Machine Learning outputs, including K-Means clusters (e.g., "High Salary–High Cost" vs. "Affordable Hubs").
+The following grid provides a high-level overview of the global affordability analysis. Click on the dashboard titles to explore the interactive versions on Tableau Public.
+
+| [Dashboard 1: Global Affordability](https://public.tableau.com/app/profile/tejashwini.saravanan8751/viz/finalprojectassigmentTableau/GlobalAffordabilityTracker2025) | [Dashboard 2: Country Insights](https://public.tableau.com/app/profile/tejashwini.saravanan8751/viz/finalprojectassigmentTableau/Country-LevelAffordabilityInsights) |
+| :---: | :---: |
+| <img src="images/Dashboard 1 Global Affordability Tracker 2025.png" width="450"> | <img src="images/Dashboard 2  Country-Level Affordability Insights.png" width="450"> |
+| **Global Affordability Tracker 2025** | **Country-Level Affordability Insights** |
+| *Visualizes geographic "Economic Red Zones" where living costs exceed local earnings. Uses a custom Affordability Score to identify global disparities.* | *Benchmarks average salaries against total essential costs (rent, groceries, utilities) to reveal which nations face the highest inflation pressure.* |
+| | |
+| [Dashboard 3: City Deep-Dive](https://public.tableau.com/app/profile/tejashwini.saravanan8751/viz/finalprojectassigmentTableau/City-LevelAffordabilityInsights) | [Dashboard 4: Key Insights](https://public.tableau.com/app/profile/tejashwini.saravanan8751/viz/finalprojectassigmentTableau/GlobalCostofLivingKeyInsights) |
+| <img src="images/Dashboard 3 City-Level Affordability Insights .png" width="450"> | <img src="images/Dashboard 4 Global Cost of Living Key Insights.png" width="450"> |
+| **City-Level Affordability Insights** | **Global Cost of Living Key Insights** |
+| *A granular analysis of the Top 10 and Bottom 10 cities. Highlights the "Rent Trap" where housing costs consume more than 40% of the median salary.* | *Synthesizes regional cost patterns and visualizes the results of K-Means clustering to categorize cities into economic profiles.* |
+
 ---
 
 ## 🛠 Tech Stack & Tools
@@ -37,20 +41,26 @@ The visualization suite follows a "Macro-to-Micro" design philosophy, transition
 * **Feature Engineering:** Calculated the **Affordability Score**:  
     $$\text{Affordability Score} = \frac{\text{Monthly Median Salary}}{\text{Rent} + \text{Groceries} + \text{Utilities}}$$
 
-> 📸 **[Insert Screenshot: Distribution of Affordability Scores Histogram from Slide 4]** > *Insight: Most cities cluster around median affordability, proving that true financial comfort is reserved for a global minority.*
+ **<img src="images/Distribution of Affordability Scores Histogram.png" width="350">**
+
+*Insight: Most cities cluster around median affordability, proving that true financial comfort is reserved for a global minority.*
 
 ### 2. Machine Learning Implementation
 #### **A. Predictive Modeling (Random Forest)**
 * **Model Performance:** Achieved a **Test R² of 0.975**, capturing complex, non-linear relationships between salary and essential costs.
 * **Accuracy:** Significantly outperformed the single Decision Tree model by reducing prediction error (RMSE: 1.13).
 
-> 📸 **[Insert Screenshot: Random Forest Performance Metrics from Slide 6]**
+ **<img src="images/Random Forest Performance Metrics .png" width="350">**
+
+*Insight: Evaluation of the Random Forest Regressor, achieving a high Test R² of 0.975.*
 
 #### **B. Key Drivers (Linear Regression)**
 * **Top Driver:** Median Salary (+9.43 standardized coefficient) is the strongest positive driver.
 * **Economic Drags:** Grocery Prices (-4.29) and Rent (-4.11) are the primary negative impacts on urban affordability.
 
-> 📸 **[Insert Screenshot: Standardized Coefficients Bar Chart from Slide 8]**
+ **<img src="images/Standardized Coefficients .png" width="350">**
+
+ *Insight: dentifying Median Salary, Groceries, and Rent as the primary drivers of the Affordability Score.*
 
 #### **C. Market Segmentation (K-Means Clustering)**
 * Applied clustering to segment cities into 5 distinct profiles:
@@ -58,7 +68,10 @@ The visualization suite follows a "Macro-to-Micro" design philosophy, transition
     * **Cluster 0:** High Cost–Low Salary (127 countries, the "Crisis Zone").
     * **Cluster 3:** Low Salary–Low Cost (104 countries).
 
-> 📸 **[Insert Screenshot: Rent Burden by Cluster Boxplot from Slide 5 or 7]**
+ **<img src="images/Rent Burden by Cluster Boxplot.png" width="350">**
+
+ *Insight: Boxplot illustrating how rent as a percentage of salary varies significantly across city clusters* 
+
 
 ---
 
@@ -82,15 +95,21 @@ The visualization suite follows a "Macro-to-Micro" design philosophy, transition
 * **What to Improve:** Future work will integrate **real-time datasets** and additional cost categories like **Healthcare and Transport** for a 360-degree affordability view.
 
 ---
-
 ## 📂 Repository Structure
+
 ```text
-├── data/
-│   └── final_project_assignment_csv.csv    # Merged & Cleaned Dataset
-├── notebooks/
-│   └── finalprojectassignment.ipynb        # Python Wrangling & ML Code
-├── docs/
-│   ├── Executive_Summary.pdf               # Business Summary
-│   ├── Final_Project_Paper.docx            # Detailed Research Paper
-│   └── Presentation.pdf                    # Visual Slide Deck
-└── README.md
+├── images/                          # Dashboard screenshots and analytical plots
+├── Executive_Summary.pdf            # 1-page business impact summary
+├── Project_Presentation.pdf         # Visual slide deck of the project
+├── README.md                        # Project documentation (this file)
+├── cost-of-living-crisis.csv        # Cleaned and merged global dataset
+├── cost-of-living-crisis.ipynb      # Python notebook (Data cleaning & ML models)
+├── cost-of-living-crisis.twb        # Tableau Workbook file
+├── requirements.txt                 # List of required Python libraries
+└── LICENSE                          # MIT License file
+
+``` 
+
+## 👤 Author
+Tejashwini Saravanan [LinkedIn](https://www.linkedin.com/in/tejashwinisaravanan/)
+
