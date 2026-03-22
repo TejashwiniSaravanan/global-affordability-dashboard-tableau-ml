@@ -1,7 +1,8 @@
 <div align="center">
 
-# 🌍 Cost of Living Crisis Dashboard
-### Global Urban Affordability Analysis
+# 🌍 Global Affordability Dashboard
+### Urban Cost of Living Analysis - Tableau & Machine Learning
+
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/tejashwini.saravanan8751/viz/finalprojectassigmentTableau/GlobalAffordabilityTracker2025)
@@ -149,9 +150,9 @@ Cities were segmented into 5 distinct economic profiles:
  
 ```bash
 #1. Clone the repository
-git clone https://github.com/TejashwiniSaravanan/cost-of-living-crisis-dashboard.git
-cd cost-of-living-crisis-dashboard
- 
+git clone https://github.com/TejashwiniSaravanan/global-affordability-dashboard-tableau-ml.git
+cd global-affordability-dashboard-tableau-ml
+
 #2. Install dependencies
 pip install -r requirements.txt
  
@@ -199,7 +200,7 @@ cost-of-living-crisis-dashboard/
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tejashwinisaravanan/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TejashwiniSaravanan)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-FF6B6B?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tejashwinisaravanan.github.io/cost-of-living-crisis-dashboard/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-FF6B6B?style=for-the-badge&logo=google-chrome&logoColor=white)](https://tejashwinisaravanan.github.io/global-affordability-dashboard-tableau-ml/)
 
 </div>
 
