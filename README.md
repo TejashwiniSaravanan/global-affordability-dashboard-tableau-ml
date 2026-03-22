@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://public.tableau.com/app/profile/tejashwini.saravanan8751/viz/finalprojectassigmentTableau/GlobalAffordabilityTracker2025)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
-[![Status](https://img.shields.io/badge/Status-Complete-2ea44f?style=for-the-badge)](https://github.com/TejashwiniSaravanan/cost-of-living-crisis-dashboard)
+[![Status](https://img.shields.io/badge/Status-Complete-2ea44f?style=for-the-badge)](https://github.com/TejashwiniSaravanan/global-affordability-dashboard-tableau-ml)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](LICENSE)
 
 <br/>
@@ -167,7 +167,7 @@ jupyter notebook cost-of-living-crisis.ipynb
 ## 📂 Repository Structure
 
 ```
-cost-of-living-crisis-dashboard/
+global-affordability-dashboard-tableau-ml/
 │
 ├── 📁 images/                          # Dashboard screenshots & analytical plots
 ├── 📄 Executive_Summary.pdf            # 1-page business impact summary
